@@ -1,8 +1,9 @@
 from neural_style_transfer import style_transfer
 
+import sys
+
 ## simple main() for demonstration :
 
-import sys
 
 def main():
     
@@ -36,13 +37,13 @@ if __name__ == "__main__":
 ### IMAGES PATH
 
 #Name of the images used for the style transfer.
-content_img_name = "tournesol.jpg"
-style_img_name = "blue_strokes.jpg"
-output_img_name = "blue_sol.jpg"
+content_img_name = "sunflower.jpg"
+style_img_name = "stained_glass_1.jpg"
+output_img_name = "glass_sunflower.jpg"
 
 #Full path of the image used.
-style_image_path = "./images/all/" + style_img_name
-content_image_path =  "./images/all/" + content_img_name
+style_image_path = "./images/" + style_img_name
+content_image_path =  "./images/" + content_img_name
 output_image_path = "./output/" + output_img_name
 
 
@@ -79,16 +80,6 @@ var_weight = 1.
 ### Layer used for the Loss calculations
 ln_content = ["block5_conv2"]
 ln_style = ["block1_conv1", "block2_conv1", "block3_conv1", "block4_conv1", "block5_conv1"]
-
-style_transfer(
-        content_image_path,
-        style_image_path,
-        output_image_path,
-        loadDims = True,
-        withBaseImage = True,
-        rescale = 1.0,
-        max_size = 100*100,
-        nb_iterations = 5)
 
 style_transfer(
         content_image_path, #Path of the content image

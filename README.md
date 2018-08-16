@@ -7,7 +7,9 @@ An example :
 
 ![NST_example](https://i.imgur.com/Ch0WLH8.png)
 
-Deep Learning is too computer-intensive to run smoothly on my PC. So there's two version of my codes, one with only Python to run on your own machine in a Python environment, and that use Google Colab, so you can remotely use a free high-end GPU from Google. 
+This is my Python implementation of it, using Keras and Tensorflow. 
+
+Deep Learning is too computer-intensive to run smoothly on my PC. So there's two version of my code, one with only Python to run on your own machine in a Python environment, and that use Google Colab, so you can remotely use a free high-end GPU from Google. 
 The two versions are almost similar, it's mostly the wrapping around to launch the main function, tune your own parameters and access your images that change between them.
 
 I separated them into the two directories you see above. Everything you need to run it on your own PC is in the 'Python' folder, and everything you need for Google Colab is in the 'Colab' folder. Some tips and requirments :
